@@ -1,7 +1,7 @@
 package cn.chenjianxiong.expense.service.impl;
 
 import cn.chenjianxiong.expense.mapper.BranchMapper;
-import cn.chenjianxiong.expense.po.Branch;
+import cn.chenjianxiong.expense.entity.Branch;
 import cn.chenjianxiong.expense.service.BranchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

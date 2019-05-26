@@ -1,6 +1,6 @@
 package cn.chenjianxiong.expense.service;
 
-import cn.chenjianxiong.expense.po.User;
+import cn.chenjianxiong.expense.entity.User;
 
 public interface UserService {
     boolean register(User user);

@@ -6,8 +6,33 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0529b791-7c36-4fd9-a17d-e0b920f1b713" name="Default Changelist" comment="">
+    <list default="true" id="0529b791-7c36-4fd9-a17d-e0b920f1b713" name="Default Changelist" comment="readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/controller/BranchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/controller/BranchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/BranchMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/BranchMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/ConductRecordMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/ConductRecordMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/ExpenseAccountInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/ExpenseAccountInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/ExpenseAccountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/ExpenseAccountMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/po/Branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/entity/Branch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/po/ConductRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/entity/ConductRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/po/ExpenseAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/entity/ExpenseAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/po/ExpenseAccountInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/entity/ExpenseAccountInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/po/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/entity/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/BranchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/BranchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/ConductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/ConductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/ExpenseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/ExpenseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/impl/BranchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/impl/BranchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/impl/ConductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/impl/ConductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/impl/ExpenseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/impl/ExpenseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/chenjianxiong/expense/test/MainConsole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/vendor/plugins/datatables/extensions/Editor/js/dataTables.editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/vendor/plugins/datatables/extensions/Editor/js/dataTables.editor.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-475">
-              <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+              <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="67">
-              <caret line="179" column="42" lean-forward="true" selection-start-line="179" selection-start-column="42" selection-end-line="179" selection-end-column="42" />
+              <caret line="179" column="42" selection-start-line="179" selection-start-column="42" selection-end-line="179" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -94,11 +119,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="190">
+                <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/static/chenjx/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="142">
-              <caret line="35" column="52" lean-forward="true" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+              <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -140,7 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/ExpenseAccountService.java" />
         <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/BranchMapper.xml" />
         <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/impl/ExpenseAccountServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/test/MainConsole.java" />
@@ -191,6 +227,7 @@
         <option value="$PROJECT_DIR$/web/login.html" />
         <option value="$PROJECT_DIR$/web/static/chenjx/js/index.js" />
         <option value="$PROJECT_DIR$/web/index.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -226,6 +263,17 @@
             <path>
               <item name="eExpense" type="b2602c69:ProjectViewProjectNode" />
               <item name="eExpense" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eExpense" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eExpense" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eExpense" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eExpense" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="expense" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -412,8 +460,16 @@
       <workItem from="1558597655203" duration="945000" />
       <workItem from="1558672780011" duration="1714000" />
       <workItem from="1558674521666" duration="30878000" />
-      <workItem from="1558852795786" duration="10762000" />
+      <workItem from="1558852795786" duration="11522000" />
     </task>
+    <task id="LOCAL-00001" summary="readme">
+      <created>1558872907491</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558872907491</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -449,7 +505,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54013000" />
+    <option name="totallyTimeSpent" value="54773000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -462,6 +518,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22231205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -473,7 +530,7 @@
       <window_info id="Project Explorer" order="7" weight="0.32983023" />
       <window_info id="Job Explorer" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.65957445" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3723404" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -484,7 +541,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32978722" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.32978722" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.330373" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.330373" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32978722" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.32978722" />
@@ -503,6 +560,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -520,13 +581,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://0869d38b-183e-4a8a-bef1-853acfe30425/schema/SCOTT/table/E_EXPENSE_ACCOUNT">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/impl/ExpenseServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2280">
@@ -587,7 +641,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/po/Result.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/entity/Result.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
@@ -840,14 +894,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/po/Branch.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/entity/Branch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/po/User.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
@@ -900,7 +954,7 @@
     <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-475">
-          <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -910,14 +964,14 @@
     <entry file="file://$PROJECT_DIR$/web/static/chenjx/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
-          <caret line="35" column="52" lean-forward="true" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+          <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
-          <caret line="179" column="42" lean-forward="true" selection-start-line="179" selection-start-column="42" selection-end-line="179" selection-end-column="42" />
+          <caret line="179" column="42" selection-start-line="179" selection-start-column="42" selection-end-line="179" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -935,6 +989,16 @@
             <element signature="n#style#0;n#section#6;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#section#6;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="190">
+            <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

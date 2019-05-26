@@ -1,7 +1,7 @@
 package cn.chenjianxiong.expense.service.impl;
 
 import cn.chenjianxiong.expense.mapper.ConductRecordMapper;
-import cn.chenjianxiong.expense.po.ConductRecord;
+import cn.chenjianxiong.expense.entity.ConductRecord;
 import cn.chenjianxiong.expense.service.ConductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package cn.chenjianxiong.expense.po;
+package cn.chenjianxiong.expense.entity;
 
 /**
  * @author ：James Chen

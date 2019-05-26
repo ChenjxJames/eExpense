@@ -1,7 +1,7 @@
 package cn.chenjianxiong.expense.controller;
 
-import cn.chenjianxiong.expense.po.Result;
-import cn.chenjianxiong.expense.po.User;
+import cn.chenjianxiong.expense.entity.Result;
+import cn.chenjianxiong.expense.entity.User;
 import cn.chenjianxiong.expense.service.UserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

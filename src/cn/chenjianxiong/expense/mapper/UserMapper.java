@@ -1,6 +1,6 @@
 package cn.chenjianxiong.expense.mapper;
 
-import cn.chenjianxiong.expense.po.User;
+import cn.chenjianxiong.expense.entity.User;
 
 public interface UserMapper {
     User findUserById(String id);

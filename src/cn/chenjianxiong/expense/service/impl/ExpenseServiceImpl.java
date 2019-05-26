@@ -2,8 +2,8 @@ package cn.chenjianxiong.expense.service.impl;
 
 import cn.chenjianxiong.expense.mapper.ExpenseAccountInfoMapper;
 import cn.chenjianxiong.expense.mapper.ExpenseAccountMapper;
-import cn.chenjianxiong.expense.po.ExpenseAccount;
-import cn.chenjianxiong.expense.po.ExpenseAccountInfo;
+import cn.chenjianxiong.expense.entity.ExpenseAccount;
+import cn.chenjianxiong.expense.entity.ExpenseAccountInfo;
 import cn.chenjianxiong.expense.service.ExpenseService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

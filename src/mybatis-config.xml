@@ -4,7 +4,7 @@
 <configuration>
     <!--配置别名 -->
     <typeAliases>
-        <package name="cn.chenjianxiong.expense.po" />
+        <package name="cn.chenjianxiong.expense.entity" />
     </typeAliases>
     <!--配置Mapper的位置 -->
 	<mappers>

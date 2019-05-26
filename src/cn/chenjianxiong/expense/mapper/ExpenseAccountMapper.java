@@ -1,6 +1,6 @@
 package cn.chenjianxiong.expense.mapper;
 
-import cn.chenjianxiong.expense.po.ExpenseAccount;
+import cn.chenjianxiong.expense.entity.ExpenseAccount;
 
 import java.util.List;
 

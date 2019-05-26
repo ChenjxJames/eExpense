@@ -1,7 +1,7 @@
 package cn.chenjianxiong.expense.service;
 
-import cn.chenjianxiong.expense.po.ExpenseAccount;
-import cn.chenjianxiong.expense.po.ExpenseAccountInfo;
+import cn.chenjianxiong.expense.entity.ExpenseAccount;
+import cn.chenjianxiong.expense.entity.ExpenseAccountInfo;
 
 import java.util.List;
 

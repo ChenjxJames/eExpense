@@ -1,6 +1,6 @@
 package cn.chenjianxiong.expense.mapper;
 
-import cn.chenjianxiong.expense.po.ConductRecord;
+import cn.chenjianxiong.expense.entity.ConductRecord;
 
 import java.util.List;
 

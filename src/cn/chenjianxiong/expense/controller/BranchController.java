@@ -1,7 +1,7 @@
 package cn.chenjianxiong.expense.controller;
 
-import cn.chenjianxiong.expense.po.Branch;
-import cn.chenjianxiong.expense.po.Result;
+import cn.chenjianxiong.expense.entity.Branch;
+import cn.chenjianxiong.expense.entity.Result;
 import cn.chenjianxiong.expense.service.BranchService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

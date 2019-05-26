@@ -1,7 +1,7 @@
 package cn.chenjianxiong.expense.service.impl;
 
 import cn.chenjianxiong.expense.mapper.UserMapper;
-import cn.chenjianxiong.expense.po.User;
+import cn.chenjianxiong.expense.entity.User;
 import cn.chenjianxiong.expense.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
