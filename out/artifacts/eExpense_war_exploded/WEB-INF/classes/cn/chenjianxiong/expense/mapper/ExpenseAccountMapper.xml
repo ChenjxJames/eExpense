@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.chenjianxiong.expense.mapper.ExpenseAccountMapper">
+	<select id="getNextValue" resultType="int">
+		select E_EXPENSE_ACCOUNT_ID_SEQ.nextval from dual
+	</select>
+    <insert id="addExpenseAccount" parameterType="ExpenseAccount" >
+		insert into E_EXPENSE_ACCOUNT(ID,REASON,CREATOR,CREATE_TIME,CONDUCTOR,PRICE,STATE) values(#{id},#{reason},#{creator},#{createTime},#{conductor},#{price},#{state})
+	</insert>
+    <select id="findExpenseAccountById" parameterType="Integer" resultType="ExpenseAccount">
+		select * from E_EXPENSE_ACCOUNT where ID=#{id}
+	</select>
+	<select id="findAllExpenseAccount" resultMap="ExpenseAccountMap">
+		select * from E_EXPENSE_ACCOUNT
+	</select>
+    <update id="updateExpenseAccount" parameterType="ExpenseAccount">
+		update E_EXPENSE_ACCOUNT set REASON=#{reason}, CREATOR=#{creator}, CREATE_TIME=#{createTime}, CONDUCTOR=#{conductor}, PRICE=#{price}, STATE=#{state} where ID=#{id}
+	</update>
+    <delete id="delExpenseAccount" parameterType="Integer">
+		delete from E_EXPENSE_ACCOUNT where ID=#{id}
+	</delete>
+
+	<resultMap id="ExpenseAccountMap" type="ExpenseAccount">
+		<id column="id" property="id" />
+		<result column="reason" property="reason" />
+		<result column="creator" property="creator" />
+		<result column="createTime" property="createTime" />
+		<result column="conductor" property="conductor" />
+		<result column="price" property="price" />
+		<result column="state" property="state" />
+	</resultMap>
+</mapper>

@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="eExpense:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0529b791-7c36-4fd9-a17d-e0b920f1b713" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="SCOTT: schema" type="3abd1b6a:OraImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="SCOTT: schema" type="3abd1b6a:OraImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExecutionTargetDialog">
+    <checked>
+      <node key="0869d38b-183e-4a8a-bef1-853acfe30425" />
+    </checked>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-475">
+              <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="155" column="24" lean-forward="true" selection-start-line="155" selection-start-column="24" selection-end-line="155" selection-end-column="24" />
+              <folding>
+                <element signature="n#style#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#section#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#section#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#section#2;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#section#2;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#section#3;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#section#3;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#section#3;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#4;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#section#3;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#section#5;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#section#5;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#section#6;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#section#6;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/static/chenjx/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="35" column="52" lean-forward="true" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>staff</find>
+      <find>Account</find>
+      <find>my</find>
+      <find>User</find>
+      <find>user</find>
+      <find>ExpenseAccount</find>
+      <find>springmvc-</find>
+      <find>bxd</find>
+      <find>/bxd/</find>
+      <find>href=&quot;</find>
+      <find>src=&quot;</find>
+      <find>id=&quot;content</find>
+      <find>addItemButton</find>
+      <find>content</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/ExpenseAccountService.java" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/BranchMapper.xml" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/impl/ExpenseAccountServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/test/MainConsole.java" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/impl/BranchServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/ExpenseService.java" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/po/ConductRecord.java" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/po/Branch.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0869d38b-183e-4a8a-bef1-853acfe30425/console_5.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0869d38b-183e-4a8a-bef1-853acfe30425/console_6.sql" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/ExpenseAccountInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/ConductRecordMapper.java" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/ExpenseAccountInfoMapper.java" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/ConductRecordMapper.xml" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/po/ExpenseAccountInfo.java" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/po/ExpenseAccount.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0869d38b-183e-4a8a-bef1-853acfe30425/console_7.sql" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/ExpenseAccountMapper.java" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/ExpenseAccountMapper.xml" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/impl/ExpenseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/ConductService.java" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/impl/ConductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/po/Result.java" />
+        <option value="$PROJECT_DIR$/web/assets/js/chenjx/login.js" />
+        <option value="$PROJECT_DIR$/web/jsp/bottom.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/self.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/employee_update.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/employee_list.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/employee_add.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/department_update.jsp" />
+        <option value="$PROJECT_DIR$/src/spring-config.xml" />
+        <option value="$PROJECT_DIR$/web/jsp/department_list.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/department_add.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/change_password.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/bxd_update.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/bxd_self.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/top.jsp" />
+        <option value="$PROJECT_DIR$/web/bxd/top.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/cn/chenjianxiong/expense/controller/BranchController.java" />
+        <option value="$PROJECT_DIR$/web/info.html" />
+        <option value="$PROJECT_DIR$/web/add.html" />
+        <option value="$PROJECT_DIR$/web/static/assets/js/chenjx/login.js" />
+        <option value="$PROJECT_DIR$/web/list.html" />
+        <option value="$PROJECT_DIR$/web/static/js/items.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/login.html" />
+        <option value="$PROJECT_DIR$/web/index.html" />
+        <option value="$PROJECT_DIR$/web/static/chenjx/js/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-12" />
+    <option name="width" value="981" />
+    <option name="height" value="1032" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="eExpense" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eExpense" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eExpense" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eExpense" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eExpense" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eExpense" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="bxd" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="oracle" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\IdeaProjects\eExpense\web" />
+      <recent name="D:\Java\IdeaProjects\eExpense\web\WEB-INF\lib" />
+      <recent name="D:\Java\IdeaProjects\eExpense\src\cn\chenjianxiong\expense\mapper" />
+      <recent name="D:\Java\IdeaProjects\eExpense\src" />
+      <recent name="D:\Java\IdeaProjects\eExpense\web\WEB-INF" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.chenjianxiong.expense.mapper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\IdeaProjects\eExpense\web\static\chenjx\js" />
+      <recent name="D:\Java\IdeaProjects\eExpense\web\static" />
+      <recent name="D:\Java\IdeaProjects\eExpense\web" />
+      <recent name="D:\Java\IdeaProjects\eExpense\document" />
+      <recent name="D:\Java\IdeaProjects\eExpense" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.12">
+    <configuration name="MainConsole" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.chenjianxiong.expense.test.MainConsole" />
+      <module name="eExpense" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.chenjianxiong.expense.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpenseServiceImpl.testAddExpenseAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="eExpense" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.chenjianxiong.expense.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.chenjianxiong.expense.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="cn.chenjianxiong.expense.service.impl.ExpenseServiceImpl" />
+      <option name="METHOD_NAME" value="testAddExpenseAccount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImpl.testRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="eExpense" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.chenjianxiong.expense.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.chenjianxiong.expense.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="cn.chenjianxiong.expense.service.impl.UserServiceImpl" />
+      <option name="METHOD_NAME" value="testRegister" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.12" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="eExpense:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/eExpense_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_12_eExpense" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="58085" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="eExpense:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ExpenseServiceImpl.testAddExpenseAccount" />
+        <item itemvalue="Application.MainConsole" />
+        <item itemvalue="JUnit.UserServiceImpl.testRegister" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0529b791-7c36-4fd9-a17d-e0b920f1b713" name="Default Changelist" comment="" />
+      <created>1558587614434</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558587614434</updated>
+      <workItem from="1558587619917" duration="7632000" />
+      <workItem from="1558595388831" duration="1000" />
+      <workItem from="1558595542414" duration="2081000" />
+      <workItem from="1558597655203" duration="945000" />
+      <workItem from="1558672780011" duration="1714000" />
+      <workItem from="1558674521666" duration="30878000" />
+      <workItem from="1558852795786" duration="10050000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ExpenseServiceImpl_testAddExpenseAccount - 2019.05.24 at 16h 22m 48s.xml">
+      <configuration name="ExpenseServiceImpl.testAddExpenseAccount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExpenseServiceImpl_testAddExpenseAccount - 2019.05.24 at 16h 23m 19s.xml">
+      <configuration name="ExpenseServiceImpl.testAddExpenseAccount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExpenseServiceImpl_testAddExpenseAccount - 2019.05.24 at 16h 23m 37s.xml">
+      <configuration name="ExpenseServiceImpl.testAddExpenseAccount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExpenseServiceImpl_testAddExpenseAccount - 2019.05.24 at 16h 24m 36s.xml">
+      <configuration name="ExpenseServiceImpl.testAddExpenseAccount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExpenseServiceImpl_testAddExpenseAccount - 2019.05.24 at 16h 31m 08s.xml">
+      <configuration name="ExpenseServiceImpl.testAddExpenseAccount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExpenseServiceImpl_testAddExpenseAccount - 2019.05.24 at 16h 31m 22s.xml">
+      <configuration name="ExpenseServiceImpl.testAddExpenseAccount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExpenseServiceImpl_testAddExpenseAccount - 2019.05.24 at 16h 37m 07s.xml">
+      <configuration name="ExpenseServiceImpl.testAddExpenseAccount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExpenseServiceImpl_testAddExpenseAccount - 2019.05.24 at 16h 37m 37s.xml">
+      <configuration name="ExpenseServiceImpl.testAddExpenseAccount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExpenseServiceImpl_testAddExpenseAccount - 2019.05.24 at 16h 49m 59s.xml">
+      <configuration name="ExpenseServiceImpl.testAddExpenseAccount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExpenseServiceImpl_testAddExpenseAccount - 2019.05.24 at 16h 50m 53s.xml">
+      <configuration name="ExpenseServiceImpl.testAddExpenseAccount" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="53301000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22231205" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="DB Browser" order="6" />
+      <window_info id="Project Explorer" order="7" weight="0.32983023" />
+      <window_info id="Job Explorer" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.15425532" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3723404" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32978722" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32978722" />
+      <window_info anchor="bottom" id="Spring" order="11" weight="0.32978722" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32978722" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32978722" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.32978722" />
+      <window_info anchor="bottom" id="Messages" order="16" />
+      <window_info anchor="bottom" id="Console" order="17" />
+      <window_info anchor="bottom" id="DB Execution Console" order="18" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.2497979" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.18108326" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.32983023" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/web/index.html</url>
+          <line>407</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="das://0869d38b-183e-4a8a-bef1-853acfe30425/schema/SCOTT/table/E_EXPENSE_ACCOUNT">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/impl/ExpenseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3075#3076#0" expanded="true" />
+            <element signature="e#3103#3104#0" expanded="true" />
+            <element signature="e#3173#3174#0" expanded="true" />
+            <element signature="e#3201#3202#0" expanded="true" />
+            <element signature="e#3518#3519#0" expanded="true" />
+            <element signature="e#3545#3546#0" expanded="true" />
+            <element signature="e#3756#3757#0" expanded="true" />
+            <element signature="e#3783#3784#0" expanded="true" />
+            <element signature="e#3684#3704#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/ExpenseAccountMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="103" selection-start-line="8" selection-start-column="103" selection-end-line="8" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/mapper/ExpenseAccountMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="54" lean-forward="true" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0869d38b-183e-4a8a-bef1-853acfe30425/console_7.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/impl/ConductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/ConductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/po/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#632#633#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/test/MainConsole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="12" column="74" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/assets/js/demo/charts/d3.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13554" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/assets/js/demo/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="318" column="27" lean-forward="true" selection-start-line="318" selection-start-column="27" selection-end-line="318" selection-end-column="27" />
+          <folding>
+            <element signature="e#264#271#1" expanded="true" />
+            <element signature="e#55#59#0" expanded="true" />
+            <element signature="e#60#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0869d38b-183e-4a8a-bef1-853acfe30425/schema/SCOTT/table/E_USER">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Temporary/J2EE/结课项目/bxd(2)/login.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/index.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/bxd/bottom.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bxd/bxd_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1403">
+          <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bxd/bxd_check.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1631" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bxd/bxd_deal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1593" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bxd/bxd_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1156" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bxd/employee_update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bxd/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-741" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bxd/department_update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bxd/change_password.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bxd/bxd_update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="90" column="24" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bxd/bxd_self.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bxd/self.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bxd/top.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/BranchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/controller/BranchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-241">
+          <caret line="82" column="43" lean-forward="true" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="376" selection-start-line="376" selection-end-line="396" selection-end-column="28" />
+          <folding>
+            <element signature="n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="312" column="46" lean-forward="true" selection-start-line="312" selection-start-column="46" selection-end-line="312" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/js/items.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-535">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="344" column="46" lean-forward="true" selection-start-line="344" selection-start-column="46" selection-end-line="344" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/chenjx/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bxd/employee_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="57" column="10" lean-forward="true" selection-start-line="3" selection-end-line="57" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/po/Branch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/po/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bxd/employee_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="5" selection-start-line="5" selection-end-line="79" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bxd/department_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="75" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bxd/department_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="51" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/chenjianxiong/expense/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-475">
+          <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="155" column="24" lean-forward="true" selection-start-line="155" selection-start-column="24" selection-end-line="155" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#section#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#section#2;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#2;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#section#3;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#3;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#section#3;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#4;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#3;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#section#5;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#5;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#section#6;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#6;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/chenjx/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="35" column="52" lean-forward="true" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>eExpense:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>eExpense</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
