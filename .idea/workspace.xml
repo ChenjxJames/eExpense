@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0529b791-7c36-4fd9-a17d-e0b920f1b713" name="Default Changelist" comment="" />
+    <list default="true" id="0529b791-7c36-4fd9-a17d-e0b920f1b713" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="155" column="24" lean-forward="true" selection-start-line="155" selection-start-column="24" selection-end-line="155" selection-end-column="24" />
+            <state relative-caret-position="67">
+              <caret line="179" column="42" lean-forward="true" selection-start-line="179" selection-start-column="42" selection-end-line="179" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -92,7 +94,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/static/chenjx/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="142">
@@ -131,6 +133,9 @@
       <find>addItemButton</find>
       <find>content</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -184,8 +189,8 @@
         <option value="$PROJECT_DIR$/web/static/js/items.js" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/login.html" />
-        <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/static/chenjx/js/index.js" />
+        <option value="$PROJECT_DIR$/web/index.html" />
       </list>
     </option>
   </component>
@@ -207,6 +212,7 @@
     <option name="width" value="981" />
     <option name="height" value="1032" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -221,17 +227,6 @@
               <item name="eExpense" type="b2602c69:ProjectViewProjectNode" />
               <item name="eExpense" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="eExpense" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eExpense" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eExpense" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eExpense" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="bxd" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -245,6 +240,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -416,7 +412,7 @@
       <workItem from="1558597655203" duration="945000" />
       <workItem from="1558672780011" duration="1714000" />
       <workItem from="1558674521666" duration="30878000" />
-      <workItem from="1558852795786" duration="10050000" />
+      <workItem from="1558852795786" duration="10762000" />
     </task>
     <servers />
   </component>
@@ -453,7 +449,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53301000" />
+    <option name="totallyTimeSpent" value="54013000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -466,9 +462,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22231205" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22231205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -479,7 +474,7 @@
       <window_info id="Job Explorer" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.15425532" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.65957445" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3723404" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -489,7 +484,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32978722" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.32978722" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32978722" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.330373" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32978722" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.32978722" />
@@ -912,10 +907,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/chenjx/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="35" column="52" lean-forward="true" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="155" column="24" lean-forward="true" selection-start-line="155" selection-start-column="24" selection-end-line="155" selection-end-column="24" />
+        <state relative-caret-position="67">
+          <caret line="179" column="42" lean-forward="true" selection-start-line="179" selection-start-column="42" selection-end-line="179" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -933,13 +935,6 @@
             <element signature="n#style#0;n#section#6;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#section#6;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/chenjx/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="35" column="52" lean-forward="true" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
         </state>
       </provider>
     </entry>
