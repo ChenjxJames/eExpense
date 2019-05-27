@@ -12,4 +12,4 @@
 * controller 表示层
 * service    业务逻辑层
 * mapper     数据访问层（dao层）
-* entity     模型层
+* entity     持久层

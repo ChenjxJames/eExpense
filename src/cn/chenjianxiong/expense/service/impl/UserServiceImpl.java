@@ -6,6 +6,8 @@ import cn.chenjianxiong.expense.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @author ：James Chen
  * @date ：Created in 2019/5/23
@@ -45,5 +47,19 @@ public class UserServiceImpl implements UserService {
             }
         }
         return result;
+    }
+
+    @Override
+    public List<User> findAllUser() {
+        List<User> userList = userMapper.findAllUser();
+        for (User user : userList) {
+            user.setPassword("");
+        }
+        return userList;
+    }
+
+    @Override
+    public User findUserById(String id) {
+        return userMapper.findUserById(id);
     }
 }

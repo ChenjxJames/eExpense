@@ -85,9 +85,9 @@ public class BranchController {
         return result;
     }
 
-    @RequestMapping(value = "/show", method = RequestMethod.GET)
+    @RequestMapping(value = "/all", method = RequestMethod.GET)
     @ResponseBody
-    public List<Branch> show(){
+    public List<Branch> getAllBranch(){
         List<Branch> branchList = null;
         try{
             ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");

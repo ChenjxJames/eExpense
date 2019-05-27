@@ -8,6 +8,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -23,7 +25,7 @@ public class UserController {
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     @ResponseBody
     public Result register(@RequestBody User user) {
-        Result result = new Result(1, "注册失败。");
+        Result result = new Result(-22, "注册失败。");
         try{
             ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
             UserService userService = ctx.getBean(UserService.class);
@@ -41,8 +43,8 @@ public class UserController {
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ResponseBody
-    public Result login(@RequestBody Map<String, String> map){
-        Result result = new Result(-1, "登录失败，用户名或密码错误。");
+    public Result login(@RequestBody Map<String, String> map, HttpSession session){
+        Result result = new Result(-21, "登录失败，用户名或密码错误。");
         try{
             String userId = map.get("userId");
             String password = map.get("password");
@@ -52,20 +54,16 @@ public class UserController {
             UserService userService = ctx.getBean(UserService.class);
 
             if (userService.login(userId, password)) {
+                User user = userService.findUserById(userId);
+                session.setAttribute("USER_LOGIN", user);  //create session
 
-
-                //create session,
-                // keep login
-                if (Boolean.parseBoolean(keeplogin)) {
-                    System.out.println("keeplogin");
+                if (Boolean.parseBoolean(keeplogin)) {  // keep login 30 day
                     result.setInfo("登陆成功,保持登陆。");
-                    //set session time
+                    session.setMaxInactiveInterval(30*24*60*60);  //set session time
                 } else {
                     result.setInfo("登陆成功。");
                 }
-
                 result.setState(0);
-
             }
         }catch (Exception e){
             e.printStackTrace();
@@ -79,7 +77,7 @@ public class UserController {
     @RequestMapping(value = "/setPassword", method = RequestMethod.POST)
     @ResponseBody
     public Result setPassword(@RequestBody Map<String, String> map){
-        Result result = new Result(-1, "密码更改失败，旧密码输入错误。");
+        Result result = new Result(-23, "密码更改失败，旧密码输入错误。");
         try{
             String oldPassword = map.get("oldPassword");
             String newPassword = map.get("newPassword");
@@ -101,13 +99,30 @@ public class UserController {
         return result;
     }
 
+    @RequestMapping(value = "/all", method = RequestMethod.GET)
+    @ResponseBody
+    public List<User> getAllUser(){
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserService userService = ctx.getBean(UserService.class);
+        return userService.findAllUser();
+    }
+
+    @RequestMapping(value = "/my", method = RequestMethod.GET)
+    @ResponseBody
+    public User getPersonalInfo(HttpSession session){
+        User resultUser = new User();
+        User sessionUser = (User) session.getAttribute("USER_LOGIN");
+        resultUser.setId(sessionUser.getId());
+        resultUser.setName(sessionUser.getName());
+        resultUser.setBranch(sessionUser.getBranch());
+        resultUser.setPosition(sessionUser.getPosition());
+        return resultUser;
+    }
 
     @RequestMapping(value = "/logout", method = RequestMethod.GET)
-    public String logout(){
-
-
-        //delete session
-
-        return "../login.html";
+    @ResponseBody
+    public Result logout(HttpSession session){
+        session.invalidate(); //delete session
+        return new Result(0, "注销成功");
     }
 }

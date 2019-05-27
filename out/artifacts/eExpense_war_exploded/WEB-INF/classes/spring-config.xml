@@ -12,4 +12,12 @@
 <!--    </bean>-->
     <mvc:annotation-driven /> <!-- 注解驱动@RequestBody @ResponseBody json到javaObject互转 -->
 <!--    <mvc:resources location="/js/" mapping="/js/**" /> &lt;!&ndash; 静态资源不被拦截，访问maping资源实际本地location下找 &ndash;&gt;-->
+    <mvc:interceptors>
+        <!-- step1:<bean class="my.interceptor.GlobalInterceptor"/> --> <!--这个位置全局拦截，对所有资源都拦截-->
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/user/login"/>
+            <bean class="cn.chenjianxiong.expense.interceptor.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 </beans>

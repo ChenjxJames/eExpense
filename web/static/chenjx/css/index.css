@@ -1,0 +1,19 @@
+.curtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 1040;
+}
+
+.login-modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -323px 0 0 -238px;
+    padding: 60px;
+    z-index: 1060;
+    background: white;
+}

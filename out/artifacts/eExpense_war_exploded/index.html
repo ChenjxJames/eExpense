@@ -16,6 +16,9 @@
     <!-- Admin Forms CSS -->
     <link rel="stylesheet" type="text/css" href="static/assets/admin-tools/admin-forms/css/admin-forms.css">
 
+    <!-- Chenjx CSS -->
+    <link rel="stylesheet" type="text/css" href="static/chenjx/css/index.css">
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="static/assets/img/favicon.ico">
 
@@ -24,7 +27,41 @@
     <script src="static/https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="static/https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+    <style>
+        /* demo page styles */
+        body {
+            min-height: 2300px;
+        }
 
+        .content-header b,
+        .admin-form .panel.heading-border:before,
+        .admin-form .panel .heading-border:before {
+            transition: all 0.7s ease;
+        }
+
+        /* responsive demo styles */
+        @media (max-width: 800px) {
+            .admin-form .panel-body {
+                padding: 18px 12px;
+            }
+        }
+
+        .ui-datepicker select.ui-datepicker-month,
+        .ui-datepicker select.ui-datepicker-year {
+            width: 48%;
+            margin-top: 0;
+            margin-bottom: 0;
+
+            line-height: 25px;
+            text-indent: 3px;
+
+            color: #888;
+            border-color: #DDD;
+            background-color: #FDFDFD;
+
+            -webkit-appearance: none; /*Optionally disable dropdown arrow*/
+        }
+    </style>
 </head>
 
 <body class="admin-validation-page" data-spy="scroll" data-target="#nav-spy" data-offset="200">
@@ -44,7 +81,7 @@
             <li class="dropdown menu-merge">
                 <a href="#" class="dropdown-toggle fw600 p15" data-toggle="dropdown">
                     <img src="static/assets/img/avatars/5.jpg" alt="avatar" class="mw30 br64">
-                    <span class="hidden-xs pl15"> 10001 </span>
+                    <span class="hidden-xs pl15" id="show_user_id">userId</span>
                     <span class="caret caret-tp hidden-xs"></span>
                 </a>
                 <ul class="dropdown-menu list-group dropdown-persist w250" role="menu">
@@ -59,7 +96,7 @@
                             <span class="fa fa-gear"></span> 设置密码 </a>
                     </li>
                     <li class="dropdown-footer">
-                        <a href="#" class="">
+                        <a href="#" id="header_logout">
                             <span class="fa fa-power-off pr5"></span> 退出 </a>
                     </li>
                 </ul>
@@ -81,12 +118,12 @@
                 <div class="sidebar-widget author-widget">
                     <div class="media">
                         <a class="media-left" href="#">
-                            <img src="static/assets/img/avatars/3.jpg" class="img-responsive">
+                            <img src="static/assets/img/avatars/3.jpg" class="img-responsive" alt="">
                         </a>
                         <div class="media-body">
-                            <div class="media-author">宋江--总经理</div>
+                            <div class="media-author" id="show_name_and_post">宋江--总经理</div>
                             <div class="media-links">
-                                <a href="pages_login.html">退出</a>
+                                <a href="#" id="sidebar_left_logout">退出</a>
                             </div>
                         </div>
                     </div>
@@ -99,7 +136,8 @@
               <span class="input-group-addon">
                 <i class="fa fa-search"></i>
               </span>
-                        <input type="text" id="sidebar-search" class="form-control" placeholder="Search...">
+                        <label for="sidebar-search"></label><input type="text" id="sidebar-search" class="form-control"
+                                                                   placeholder="Search...">
                     </div>
                 </div>
 
@@ -185,7 +223,7 @@
     <section id="content_wrapper">
 
         <!-- Begin: Content: Expense account information-->
-        <section id="content_expense_account_info" class="table-layout animated fadeIn" style="display: none;">
+        <div id="content_expense_account_info" class="table-layout animated fadeIn" style="display: none;">
 
             <!-- begin: .tray-center -->
             <div class="tray tray-center">
@@ -207,17 +245,17 @@
                                 <span> 基本信息 </span>
                             </div>
                             <!-- .section-divider -->
-                            <div class="section row" id="items">
+                            <div class="section row">
                                 <div class="col-md-2">报销事由</div>
                                 <div class="col-md-9">到法国出差</div>
                             </div>
-                            <div class="section row" id="items">
+                            <div class="section row">
                                 <div class="col-md-2">报销人</div>
                                 <div class="col-md-4">20004</div>
                                 <div class="col-md-2">创建时间</div>
                                 <div class="col-md-4">2019-5-1 12：22</div>
                             </div>
-                            <div class="section row" id="items">
+                            <div class="section row">
                                 <div class="col-md-2">总金额</div>
                                 <div class="col-md-4">9000.00</div>
                                 <div class="col-md-2">状态</div>
@@ -270,7 +308,7 @@
                             <!-- end .form-body section -->
                             <div class="panel-footer text-right">
                                 <button type="button" class="button"
-                                        onclick="javascript:window.location.href='list.html';"> 返回
+                                        onclick="window.location.href='list.html';"> 返回
                                 </button>
                             </div>
                             <!-- end .form-footer section -->
@@ -282,11 +320,12 @@
 
                 </div>
                 <!-- end: .tray-center -->
-        </section>
+            </div>
+        </div>
         <!-- End: Content -->
 
         <!-- Begin: Content: Add expense account -->
-        <section id="content_add_expense_account" class="table-layout animated fadeIn" style="display: none;">
+        <div id="content_add_expense_account" class="table-layout animated fadeIn" style="display: none;">
 
             <!-- begin: .tray-center -->
             <div class="tray tray-center">
@@ -313,9 +352,9 @@
 
 
                                 <div class="section">
-                                    <label for="useremail" class="field prepend-icon">
-                                        <input type="text" name="cause" id="cause" class="gui-input" placeholder="报销事由">
-                                        <label for="cause" class="field-icon">
+                                    <label for="e_cause" class="field prepend-icon">
+                                        <input type="text" name="cause" id="e_cause" class="gui-input" placeholder="报销事由">
+                                        <label for="e_cause" class="field-icon">
                                             <i class="fa fa-envelope"></i>
                                         </label>
                                     </label>
@@ -404,12 +443,13 @@
                                 <!-- end section -->
                                 <!-- end .form-body section -->
                                 <div class="panel-footer text-right">
-                                    <button type="submit" class="button"> 保存</button>
+                                    <button type="button" class="button"> 保存</button>
                                     <button type="button" class="button"
-                                            onclick="javascript:window.location.href='list.html';"> 返回
+                                            onclick="window.location.href='list.html';"> 返回
                                     </button>
                                 </div>
                                 <!-- end .form-footer section -->
+                            </div>
                         </form>
 
                     </div>
@@ -419,11 +459,11 @@
 
             </div>
             <!-- end: .tray-center -->
-        </section>
+        </div>
         <!-- End: Content -->
 
         <!-- Begin: Content: expense account list -->
-        <section id="content_expense_account_list" class="table-layout animated fadeIn" style="display: none;">
+        <div id="content_expense_account_list" class="table-layout animated fadeIn" style="display: none;">
 
             <!-- begin: .tray-center -->
             <div class="tray tray-center">
@@ -451,7 +491,7 @@
                                         </button>
                                         <button type="button" class="btn btn-default light">
                                             <i class="fa fa-plus"
-                                               onclick="javascript:window.location.href='add.html';"></i>
+                                               onclick="window.location.href='add.html';"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -567,12 +607,13 @@
 
                 </div>
                 <!-- end: .tray-center -->
-        </section>
+            </div>
+        </div>
         <!-- End: Content -->
 
 
         <!-- Begin: Content: User list-->
-        <section id="content_user_list" class="table-layout animated fadeIn" style="display: none;">
+        <div id="content_user_list" class="table-layout animated fadeIn" style="display: none;">
             <div class="tray tray-center">
                 <div class="content-header">
                     <h2> 员工列表 </h2>
@@ -591,7 +632,8 @@
                                             <i class="fa fa-trash"></i>
                                         </button>
                                         <button type="button" class="btn btn-default light">
-                                            <i class="fa fa-plus" onclick="javascript:window.location.href='/employee/to_add';"></i>
+                                            <i class="fa fa-plus"
+                                               onclick="window.location.href='/employee/to_add';"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -608,7 +650,7 @@
                             </div>
                         </div>
                         <div class="panel-body pn">
-                            <table id="message-table" class="table admin-form theme-warning tc-checkbox-1">
+                            <table id="message_table" class="table admin-form theme-warning tc-checkbox-1">
                                 <thead>
                                 <tr class="">
                                     <th class="text-center hidden-xs">Select</th>
@@ -619,55 +661,17 @@
                                     <th>操作</th>
                                 </tr>
                                 </thead>
-                                <tbody>
-                                <tr class="message-unread">
-                                    <td class="hidden-xs">
-                                        <label class="option block mn">
-                                            <input type="checkbox" name="mobileos" value="FR">
-                                            <span class="checkbox mn"></span>
-                                        </label>
-                                    </td>
-                                    <td>编号</td>
-                                    <td>姓名</td>
-                                    <td class="text-center fw600">部门</td>
-                                    <td class="hidden-xs">
-                                        <span class="badge badge-warning mr10 fs11">职务</span>
-                                    </td>
-                                    <td>
-                                        <a href="/employee/to_update?sn=${emp.sn}">编辑</a>
-                                        <a href="/employee/remove?sn=${emp.sn}">删除</a>
-                                    </td>
-                                </tr>
-                                <tr class="message-unread">
-                                    <td class="hidden-xs">
-                                        <label class="option block mn">
-                                            <input type="checkbox" name="mobileos" value="FR">
-                                            <span class="checkbox mn"></span>
-                                        </label>
-                                    </td>
-                                    <td>编号</td>
-                                    <td>姓名</td>
-                                    <td class="text-center fw600">部门</td>
-                                    <td class="hidden-xs">
-                                        <span class="badge badge-warning mr10 fs11">职务</span>
-                                    </td>
-                                    <td>
-                                        <a href="/employee/to_update?sn=${emp.sn}">编辑</a>
-                                        <a href="/employee/remove?sn=${emp.sn}">删除</a>
-                                    </td>
-                                </tr>
-
-                                </tbody>
+                                <tbody id="user_list"></tbody>
                             </table>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- End: Content -->
 
         <!-- Begin: Content: Add user -->
-        <section id="content_add_user" class="table-layout animated fadeIn" style="display: none;">
+        <div id="content_add_user" class="table-layout animated fadeIn" style="display: none;">
             <div class="tray tray-center">
                 <div class="content-header">
                     <h2> 添加员工 </h2>
@@ -675,24 +679,24 @@
                 </div>
                 <div class="admin-form theme-primary mw1000 center-block" style="padding-bottom: 175px;">
                     <div class="panel heading-border">
-                        <form action="/employee/add" modelAttribute="employee"  id="admin_form" name="addForm">
+                        <form action="#" id="admin_form" name="addForm">
                             <div class="panel-body bg-light">
                                 <div class="section-divider mt20 mb40">
                                     <span> 基本信息 </span>
                                 </div>
                                 <div class="section row">
                                     <div class="col-md-6">
-                                        <label for="sn" class="field prepend-icon">
-                                            <input path="sn" class="gui-input" placeholder="工号..." />
-                                            <label for="sn" class="field-icon">
+                                        <label for="user_id" class="field prepend-icon">
+                                            <input id="user_id" class="gui-input" placeholder="工号..."/>
+                                            <label for="user_id" class="field-icon">
                                                 <i class="fa fa-user"></i>
                                             </label>
                                         </label>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="name" class="field prepend-icon">
-                                            <input path="name" class="gui-input" placeholder="姓名..."/>
-                                            <label for="name" class="field-icon">
+                                        <label for="user_name" class="field prepend-icon">
+                                            <input id="user_name" class="gui-input" placeholder="姓名..."/>
+                                            <label for="user_name" class="field-icon">
                                                 <i class="fa fa-user"></i>
                                             </label>
                                         </label>
@@ -700,33 +704,39 @@
                                 </div>
                                 <div class="section row">
                                     <div class="col-md-6">
-                                        <label for="sn" class="field select">
-                                            <select path="departmentSn" items="${dlist}" itemLabel="name" itemValue="sn" cssClass="gui-input" placeholder="所属部门..."/>
+                                        <label for="user_branch_id" class="field select">
+                                            <select id="user_branch_id" class="gui-input" title="所属部门"></select>
                                             <i class="arrow double"></i>
                                         </label>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="post" class="field select">
-                                            <select path="post" items="${plist}" cssClass="gui-input" placeholder="职务..."/>
+                                        <label for="user_post" class="field select">
+                                            <select id="user_post" class="gui-input" title="职务">
+                                                <option value ="经理">经理</option>
+                                                <option value ="主管">主管</option>
+                                                <option value="职员">职员</option>
+                                            </select>
                                             <i class="arrow double"></i>
                                         </label>
                                     </div>
                                 </div>
                                 <div class="panel-footer text-right">
-                                    <button type="submit" class="button"> 保存 </button>
-                                    <button type="button" class="button" onclick="javascript:window.history.go(-1);"> 返回 </button>
+                                    <button type="button" class="button" id="btn_add_user_submit"> 保存</button>
+                                    <button type="button" class="button" onclick="window.history.go(-1);">
+                                        返回
+                                    </button>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- End: Content -->
 
 
         <!-- Begin: Content: Branch list-->
-        <section id="content_branch_list" class="table-layout animated fadeIn" style="display: none;">
+        <div id="content_branch_list" class="table-layout animated fadeIn" style="display: none;">
             <div class="tray tray-center">
                 <div class="content-header">
                     <h2> 部门列表 </h2>
@@ -745,7 +755,8 @@
                                             <i class="fa fa-trash"></i>
                                         </button>
                                         <button type="button" class="btn btn-default light">
-                                            <i class="fa fa-plus" onclick="javascript:window.location.href='/department/to_add';"></i>
+                                            <i class="fa fa-plus"
+                                               onclick="window.location.href='/department/to_add';"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -762,7 +773,7 @@
                             </div>
                         </div>
                         <div class="panel-body pn">
-                            <table id="message-table" class="table admin-form theme-warning tc-checkbox-1">
+                            <table class="table admin-form theme-warning tc-checkbox-1">
                                 <thead>
                                 <tr class="">
                                     <th class="text-center hidden-xs">Select</th>
@@ -772,48 +783,17 @@
                                     <th>操作</th>
                                 </tr>
                                 </thead>
-                                <tbody>
-                                    <tr class="message-unread">
-                                        <td class="hidden-xs">
-                                            <label class="option block mn">
-                                                <input type="checkbox" name="mobileos" value="FR">
-                                                <span class="checkbox mn"></span>
-                                            </label>
-                                        </td>
-                                        <td>编号</td>
-                                        <td>名称</td>
-                                        <td>地址</td>
-                                        <td>
-                                            <a href="/department/to_update?sn=${dept.sn}">编辑</a>
-                                            <a href="/department/remove?sn=${dept.sn}">删除</a>
-                                        </td>
-                                    </tr>
-                                    <tr class="message-unread">
-                                        <td class="hidden-xs">
-                                            <label class="option block mn">
-                                                <input type="checkbox" name="mobileos" value="FR">
-                                                <span class="checkbox mn"></span>
-                                            </label>
-                                        </td>
-                                        <td>编号</td>
-                                        <td>名称</td>
-                                        <td>地址</td>
-                                        <td>
-                                            <a href="/department/to_update?sn=${dept.sn}">编辑</a>
-                                            <a href="/department/remove?sn=${dept.sn}">删除</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
+                                <tbody id="branch_list"></tbody>
                             </table>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- End: Content -->
 
         <!-- Begin: Content: Add branch-->
-        <section id="content_add_branch" class="table-layout animated fadeIn" style="display: none;">
+        <div id="content_add_branch" class="table-layout animated fadeIn" style="display: none;">
             <div class="tray tray-center">
                 <div class="content-header">
                     <h2> 添加部门 </h2>
@@ -821,47 +801,49 @@
                 </div>
                 <div class="admin-form theme-primary mw1000 center-block" style="padding-bottom: 175px;">
                     <div class="panel heading-border">
-                        <form action="/department/add" modelAttribute="department"  id="admin-form" name="addForm">
+                        <form action="#" name="addForm">
                             <div class="panel-body bg-light">
                                 <div class="section-divider mt20 mb40">
                                     <span> 基本信息 </span>
                                 </div>
                                 <div class="section row">
                                     <div class="col-md-6">
-                                        <label for="sn" class="field prepend-icon">
-                                            <input path="sn" class="gui-input" placeholder="编号..."/>
-                                            <label for="sn" class="field-icon">
+                                        <label for="branch_id" class="field prepend-icon">
+                                            <input id="branch_id" class="gui-input" maxlength="10" placeholder="部门编号"/>
+                                            <label for="branch_id" class="field-icon">
                                                 <i class="fa fa-user"></i>
                                             </label>
                                         </label>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="name" class="field prepend-icon">
-                                            <input path="name" class="gui-input" placeholder="名称..." />
-                                            <label for="name" class="field-icon">
+                                        <label for="branch_name" class="field prepend-icon">
+                                            <input id="branch_name" class="gui-input" maxlength="20" placeholder="部门名称"/>
+                                            <label for="branch_name" class="field-icon">
                                                 <i class="fa fa-user"></i>
                                             </label>
                                         </label>
                                     </div>
                                 </div>
                                 <div class="section">
-                                    <label for="address" class="field prepend-icon">
-                                        <input path="address" class="gui-input" placeholder="地址..." />
-                                        <label for="address" class="field-icon">
+                                    <label for="branch_address" class="field prepend-icon">
+                                        <input id="branch_address" class="gui-input" maxlength="100" placeholder="部门地址"/>
+                                        <label for="branch_address" class="field-icon">
                                             <i class="fa fa-lock"></i>
                                         </label>
                                     </label>
                                 </div>
                                 <div class="panel-footer text-right">
-                                    <button type="submit" class="button"> 保存 </button>
-                                    <button type="button" class="button" onclick="javascript:window.history.go(-1);"> 返回 </button>
+                                    <button type="button" class="button" id="btn_add_branch_submit"> 保存</button>
+                                    <button type="button" class="button" onclick="window.history.go(-1);">
+                                        返回
+                                    </button>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- End: Content -->
 
     </section>
@@ -870,45 +852,88 @@
 </div>
 <!-- End: Main -->
 
+
+<!-- Start: login -->
+<div id="modal_login">
+    <!--登陆模态框-->
+    <div class="curtain" id="login_curtain">
+    </div>
+    <div id="login_main" class="animated fadeIn login-modal">
+
+        <!-- Start: Content-Wrapper -->
+        <section id="login_content_wrapper">
+
+            <!-- Begin: Content -->
+            <section id="content">
+
+                <div class="admin-form theme-info mw500" id="login">
+
+                    <!-- Login Logo -->
+                    <div class="content-header">
+                        <h1> JAVAEE综合--报销系统</h1>
+                        <p class="lead">欢迎使用报销系统</p>
+                    </div>
+                    <!-- Login Panel/Form -->
+                    <div class="panel mt30 mb25">
+
+                        <form method="post" action="#" id="contact">
+                            <div class="panel-body bg-light p25 pb15">
+
+
+                                <!-- Username Input -->
+                                <div class="section">
+                                    <label for="username" class="field-label text-muted fs18 mb10">工号</label>
+                                    <label for="username" class="field prepend-icon">
+                                        <input type="text" name="username" id="username" class="gui-input"
+                                               placeholder="请输入工号...">
+                                        <label for="username" class="field-icon">
+                                            <i class="fa fa-user"></i>
+                                        </label>
+                                    </label>
+                                </div>
+
+                                <!-- Password Input -->
+                                <div class="section">
+                                    <label for="username" class="field-label text-muted fs18 mb10">密码</label>
+                                    <label for="password" class="field prepend-icon">
+                                        <input type="password" name="password" id="password" class="gui-input"
+                                               placeholder="请输入密码...">
+                                        <label for="password" class="field-icon">
+                                            <i class="fa fa-lock"></i>
+                                        </label>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="panel-footer clearfix">
+                                <button type="button" class="button btn-primary mr10 pull-right" id="btn_login">登陆
+                                </button>
+                                <label class="switch ib switch-primary mt10" id="check_remember">
+                                    <input type="checkbox" value="true" name="remember" id="remember" checked>
+                                    <label for="remember" data-on="是" data-off="否"></label>
+                                    <span>记住我</span>
+                                </label>
+                            </div>
+
+                        </form>
+                    </div>
+
+
+                </div>
+
+            </section>
+            <!-- End: Content -->
+
+        </section>
+        <!-- End: Content-Wrapper -->
+
+    </div>
+</div>
+<!-- End: login -->
+
+
 <!-- BEGIN: PAGE SCRIPTS -->
 
-<style>
-    /* demo page styles */
-    body {
-        min-height: 2300px;
-    }
-
-    .content-header b,
-    .admin-form .panel.heading-border:before,
-    .admin-form .panel .heading-border:before {
-        transition: all 0.7s ease;
-    }
-
-    /* responsive demo styles */
-    @media (max-width: 800px) {
-        .admin-form .panel-body {
-            padding: 18px 12px;
-        }
-    }
-</style>
-
-<style>
-    .ui-datepicker select.ui-datepicker-month,
-    .ui-datepicker select.ui-datepicker-year {
-        width: 48%;
-        margin-top: 0;
-        margin-bottom: 0;
-
-        line-height: 25px;
-        text-indent: 3px;
-
-        color: #888;
-        border-color: #DDD;
-        background-color: #FDFDFD;
-
-        -webkit-appearance: none; /*Optionally disable dropdown arrow*/
-    }
-</style>
 
 <!-- jQuery -->
 <script src="static/vendor/jquery/jquery-1.11.1.min.js"></script>
@@ -928,10 +953,13 @@
 <script src="static/assets/js/demo/demo.js"></script>
 <script src="static/assets/js/main.js"></script>
 <!-- END: PAGE SCRIPTS -->
-<script type="text/javascript" src="static/js/pages.js"></script>
-<script type="text/javascript" src="static/js/items.js"></script>
+<script src="static/js/pages.js"></script>
+<script src="static/js/items.js"></script>
 <!-- END: PAGE SCRIPTS -->
-<script type="text/javascript" src="static/chenjx/js/index.js"></script>
+
+<script src="static/chenjx/js/basic.js"></script>
+<script src="static/chenjx/js/main.js"></script>
+<script src="static/chenjx/js/user.js"></script>
 </body>
 
 

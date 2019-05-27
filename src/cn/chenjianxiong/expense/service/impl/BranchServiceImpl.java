@@ -3,7 +3,10 @@ package cn.chenjianxiong.expense.service.impl;
 import cn.chenjianxiong.expense.mapper.BranchMapper;
 import cn.chenjianxiong.expense.entity.Branch;
 import cn.chenjianxiong.expense.service.BranchService;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,6 +27,15 @@ public class BranchServiceImpl implements BranchService {
     @Override
     public Branch findBranchById(String id) {
         return branchMapper.findBranchById(id);
+    }
+
+    @Test
+    public void findBranchByIdTest(){
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+        BranchService branchService = ctx.getBean(BranchService.class);
+
+        String id = "branch123";
+        System.out.println(branchService.findBranchById(id));
     }
 
     @Override
