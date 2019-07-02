@@ -10,4 +10,6 @@ public interface UserService {
     boolean setPassword(String id, String oldPassword, String newPassword);
     List<User> findAllUser();
     User findUserById(String id);
+    User findManagerByBranch(String id);
+    User findCEO();
 }

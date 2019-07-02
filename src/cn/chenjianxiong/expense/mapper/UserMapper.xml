@@ -6,10 +6,16 @@
 		insert into E_USER(ID,PASSWORD,NAME,BRANCH,POSITION) values(#{id},#{password,jdbcType=VARCHAR},#{name},#{branch},#{position})
 	</insert>
     <select id="findAllUser" resultMap="UserMap">
-		select * from E_USER
+		select * from E_USER  ORDER BY ID
 	</select>
-	<select id="findUserById" parameterType="String" resultType="User">
+	<select id="findUserById" parameterType="String" resultMap="UserMap">
 		select * from E_USER where ID=#{id}
+	</select>
+	<select id="findManagerByBranch" parameterType="String" resultMap="UserMap">
+		select * from E_USER where POSITION='manager' and BRANCH=#{id}
+	</select>
+	<select id="findCEO" resultMap="UserMap">
+		select * from E_USER where POSITION='ceo'
 	</select>
     <update id="updateUser" parameterType="User">
 		update E_USER set PASSWORD=#{password}, NAME=#{name}, BRANCH=#{branch}, POSITION=#{position} where ID=#{id}
@@ -18,10 +24,10 @@
 		delete from E_USER where ID=#{id}
 	</delete>
 	<resultMap id="UserMap" type="User">
-		<id column="id" property="id" />
-		<result column="password" property="password" />
-		<result column="name" property="name" />
-		<result column="branch" property="branch" />
-		<result column="position" property="position" />
+		<id column="ID" property="id" />
+		<result column="PASSWORD" property="password" />
+		<result column="NAME" property="name" />
+		<result column="BRANCH" property="branch" />
+		<result column="POSITION" property="position" />
 	</resultMap>
 </mapper>

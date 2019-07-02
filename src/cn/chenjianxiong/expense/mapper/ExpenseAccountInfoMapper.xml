@@ -5,7 +5,7 @@
     <insert id="addExpenseAccountInfo" parameterType="ExpenseAccountInfo" >
 		insert into E_EXPENSE_ACCOUNT_INFO(ID,EXPENSE_ACCOUNT_ID,EXPENSE_CLASS,PRICE,INFO) values(E_EXPENSE_ACCOUNT_INFO_ID_SEQ.nextval,#{expenseAccountId},#{expenseClass},#{price},#{info})
 	</insert>
-    <select id="findExpenseAccountInfoById" parameterType="Integer" resultType="ExpenseAccountInfo">
+    <select id="findExpenseAccountInfoById" parameterType="Integer" resultMap="ExpenseAccountInfoMap">
 		select * from E_EXPENSE_ACCOUNT_INFO where ID=#{id}
 	</select>
 	<select id="findExpenseAccountInfoByExpenseAccountId" parameterType="Integer" resultMap="ExpenseAccountInfoMap">
@@ -19,10 +19,10 @@
 	</delete>
 
 	<resultMap id="ExpenseAccountInfoMap" type="ExpenseAccountInfo">
-		<id column="id" property="id" />
-		<result column="expenseAccountId" property="expenseAccountId" />
-		<result column="expenseClass" property="expenseClass" />
-		<result column="price" property="price" />
-		<result column="info" property="info" />
+		<id column="ID" property="id" />
+		<result column="EXPENSE_ACCOUNT_ID" property="expenseAccountId" />
+		<result column="EXPENSE_CLASS" property="expenseClass" />
+		<result column="PRICE" property="price" />
+		<result column="INFO" property="info" />
 	</resultMap>
 </mapper>

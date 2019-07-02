@@ -30,7 +30,7 @@
       <option name="IGNORE_JAVADOC_PERIOD" value="true" />
       <option name="IGNORE_DUPLICATED_THROWS" value="false" />
       <option name="IGNORE_POINT_TO_ITSELF" value="false" />
-      <option name="myAdditionalJavadocTags" value="date,description：用户管理,modified,version:" />
+      <option name="myAdditionalJavadocTags" value="date,description：用户管理,modified,version:,description：报销管理,description：报销单实体，用于接收前端数据,description：静态常量" />
     </inspection_tool>
   </profile>
 </component>

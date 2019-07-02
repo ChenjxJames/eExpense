@@ -5,11 +5,11 @@
     <insert id="addBranch" parameterType="Branch" >
 		insert into E_BRANCH(ID,NAME,PLACE) values(#{id},#{name},#{place})
 	</insert>
-    <select id="findBranchById" parameterType="String" resultType="Branch">
+    <select id="findBranchById" parameterType="String" resultMap="BranchMap">
 		select * from E_BRANCH where ID=#{id}
 	</select>
 	<select id="findAllBranch" resultMap="BranchMap">
-		select * from E_BRANCH
+		select * from E_BRANCH ORDER BY ID
 	</select>
     <update id="updateBranch" parameterType="Branch">
 		update E_BRANCH set NAME=#{name}, PLACE=#{place} where ID=#{id}
@@ -19,8 +19,8 @@
 	</delete>
 
 	<resultMap id="BranchMap" type="Branch">
-		<id column="id" property="id" />
-		<result column="name" property="name" />
-		<result column="place" property="place" />
+		<id column="ID" property="id" />
+		<result column="NAME" property="name" />
+		<result column="PLACE" property="place" />
 	</resultMap>
 </mapper>

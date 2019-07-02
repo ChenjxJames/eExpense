@@ -62,4 +62,14 @@ public class UserServiceImpl implements UserService {
     public User findUserById(String id) {
         return userMapper.findUserById(id);
     }
+
+    @Override
+    public User findManagerByBranch(String id) {
+        return userMapper.findManagerByBranch(id);
+    }
+
+    @Override
+    public User findCEO() {
+        return userMapper.findCEO();
+    }
 }

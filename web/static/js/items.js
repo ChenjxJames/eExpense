@@ -2,26 +2,8 @@ $(document).ready(function(){
 	builderIndex();
 	calculateMoney();
 	$("#addItemButton").click(
-		function(){
-			$("#items").children("div").last().after($("#items").children("div").first().clone());
-			$("#items").children("div").find("button").click(
-				function(){
-					$(this).parent().parent().remove();
-					if($("#items").children("div").size()==1){
-						$("#items").find("button").attr("disabled",true);
-					}
-					builderIndex();
-					calculateMoney();
-				}
-			);
-			$("#items").find("button").attr("disabled",false);
-			builderIndex();	
-			$(".money").change(
-				function(){
-					calculateMoney();
-				}
-			);
-			calculateMoney();
+		function (){
+			addItem();
 		}
 	);
 	$(".money").change(
@@ -39,10 +21,31 @@ function builderIndex(){
 				
 	});	
 }
+function addItem(){
+	$("#items").children("div").last().after($("#items").children("div").first().clone());
+	$("#items").children("div").find("button").click(
+		function(){
+			$(this).parent().parent().remove();
+			if($("#items").children("div").size()==1){
+				$("#items").find("button").attr("disabled",true);
+			}
+			builderIndex();
+			calculateMoney();
+		}
+	);
+	$("#items").find("button").attr("disabled",false);
+	builderIndex();
+	$(".money").change(
+		function(){
+			calculateMoney();
+		}
+	);
+	calculateMoney();
+}
 function calculateMoney(){
 	var totalMoney=0;
 	$.each($(".money"),function(i,val){
 		totalMoney+=parseFloat($(".money").eq(i).val());
 	});
-	$("#totalMoney").attr("value",totalMoney);
+	$("#totalMoney").val(totalMoney);
 }

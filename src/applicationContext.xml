@@ -53,7 +53,5 @@
     </bean>
 
     <!-- 开启扫描   @Service("xService") class Xservice{}   @Repository XDao -->
-    <context:component-scan base-package="cn.chenjianxiong.expense.service.impl"/>
-
-
+    <context:component-scan base-package="cn.chenjianxiong.expense.service"/>
 </beans>

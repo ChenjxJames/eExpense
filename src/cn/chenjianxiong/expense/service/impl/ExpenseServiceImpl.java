@@ -1,5 +1,7 @@
 package cn.chenjianxiong.expense.service.impl;
 
+import cn.chenjianxiong.expense.entity.ConductRecord;
+import cn.chenjianxiong.expense.mapper.ConductRecordMapper;
 import cn.chenjianxiong.expense.mapper.ExpenseAccountInfoMapper;
 import cn.chenjianxiong.expense.mapper.ExpenseAccountMapper;
 import cn.chenjianxiong.expense.entity.ExpenseAccount;
@@ -30,6 +32,9 @@ public class ExpenseServiceImpl implements ExpenseService {
     @Autowired
     ExpenseAccountInfoMapper expenseAccountInfoMapper;
 
+    @Autowired
+    ConductRecordMapper conductRecordMapper;
+
 
     @Override
     @Transactional
@@ -40,8 +45,18 @@ public class ExpenseServiceImpl implements ExpenseService {
             expenseAccountInfo.setExpenseAccountId(expenseAccount.getId());
             count += expenseAccountInfoMapper.addExpenseAccountInfo(expenseAccountInfo);
         }
-
-        return count == expenseAccountInfoList.size() + 1;
+        boolean result = (count == expenseAccountInfoList.size() + 1);
+        if(result){
+            ConductRecord conductRecord = new ConductRecord();
+            conductRecord.setExpenseAccountId(expenseAccount.getId());
+            conductRecord.setConductClass("创建");
+            conductRecord.setConductor(expenseAccount.getCreator());
+            conductRecord.setConductTime(new Date());
+            conductRecord.setConductResult("成功");
+            conductRecord.setInfo("无");
+            conductRecordMapper.addConductRecord(conductRecord);
+        }
+        return result;
     }
 
     @Override
@@ -60,18 +75,48 @@ public class ExpenseServiceImpl implements ExpenseService {
     }
 
     @Override
+    public boolean updateExpenseAccount(ExpenseAccount expenseAccount, List<ExpenseAccountInfo> expenseAccountInfoList) {
+        int count = expenseAccountMapper.updateExpenseAccount(expenseAccount);
+        for(ExpenseAccountInfo expenseAccountInfo:expenseAccountInfoList){
+            expenseAccountInfo.setExpenseAccountId(expenseAccount.getId());
+            if(expenseAccountInfo.getId() == -1){
+                count += expenseAccountInfoMapper.addExpenseAccountInfo(expenseAccountInfo);
+            } else {
+                count += expenseAccountInfoMapper.updateExpenseAccountInfo(expenseAccountInfo);
+            }
+        }
+        boolean result = (count == expenseAccountInfoList.size() + 1);
+        if (result){
+            ConductRecord conductRecord = new ConductRecord();
+            conductRecord.setExpenseAccountId(expenseAccount.getId());
+            conductRecord.setConductClass("修改");
+            conductRecord.setConductor(expenseAccount.getCreator());
+            conductRecord.setConductTime(new Date());
+            conductRecord.setConductResult("成功");
+            conductRecord.setInfo("无");
+            conductRecordMapper.addConductRecord(conductRecord);
+        }
+        return result;
+    }
+
+    @Override
     public boolean updateExpenseAccount(ExpenseAccount expenseAccount) {
         return expenseAccountMapper.updateExpenseAccount(expenseAccount) == 1;
     }
 
     @Override
-    public boolean updateExpenseAccountInfo(ExpenseAccountInfo expenseAccountInfo) {
-        return expenseAccountInfoMapper.updateExpenseAccountInfo(expenseAccountInfo) == 1;
+    public List<ExpenseAccount> findAllExpenseAccount() {
+        return expenseAccountMapper.findAllExpenseAccount();
     }
 
     @Override
-    public List<ExpenseAccount> findAllExpenseAccount() {
-        return expenseAccountMapper.findAllExpenseAccount();
+    public List<ExpenseAccount> findExpenseAccountByConductor(String id) {
+        return expenseAccountMapper.findExpenseAccountByConductorId(id);
+    }
+
+    @Override
+    public List<ExpenseAccount> findExpenseAccountByCreator(String id) {
+        return expenseAccountMapper.findExpenseAccountByCreatorId(id);
     }
 
     @Override

@@ -6,23 +6,13 @@
             keeplogin: $("[name='remember']:checked").val()
         };
 
-        $.ajax({
-            url:"/eExpense_war_exploded/user/login",
-            type:"post",
-            data:JSON.stringify(data),
-            contentType:"application/json;charset=UTF-8",
-            success: function(data){
-                if(data.state === 0){
-                    alert(data.info);
-                    init();
-                }else{
-                    alert(data.info + "  [" + data.state + "]");
-                }
-            },
-            error:function () {
-                alert("Ajax error.")
-            }
-        });
+        var result = postJson("/user/login",data,"");
+        if(result.state === 0){
+            alert(result.info);
+            eExpenseInit();
+        }else{
+            alert(result.info + "  [" + result.state + "]");
+        }
     });
 
     $("#header_logout").click(function () {
@@ -33,14 +23,12 @@
     });
 
     function logout() {
-        $.getJSON("/eExpense_war_exploded/user/logout",function (data) {
-            loginVerify(data);
-            if(data.state === 0){
-                alert(data.info);
-                $("#modal_login").show();
-            }else{
-                alert(data.info + "  [" + data.state + "]");
-            }
-        });
+        var data = getJson("/user/logout");
+        if(data.state === 0){
+            alert(data.info);
+            $("#modal_login").show();
+        }else{
+            alert(data.info + "  [" + data.state + "]");
+        }
     }
 });

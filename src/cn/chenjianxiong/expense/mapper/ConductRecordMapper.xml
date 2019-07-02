@@ -3,16 +3,16 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.chenjianxiong.expense.mapper.ConductRecordMapper">
     <insert id="addConductRecord" parameterType="ConductRecord" >
-		insert into E_CONDUCT_RECORD(ID,EXPENSE_ACCOUNT_ID,CONDUCTOR,CONDUCT_TIME,CONDUCT_CLASS,CONDUCT_RESULT,INFO) values(E_CONDUCT_RECORD_ID_SEQ.nextval,#{expenseAccountId},#{conductor},#{conduct_time},#{conduct_class},#{conduct_result},#{info})
+		insert into E_CONDUCT_RECORD(ID,EXPENSE_ACCOUNT_ID,CONDUCTOR,CONDUCT_TIME,CONDUCT_CLASS,CONDUCT_RESULT,INFO) values(E_CONDUCT_RECORD_ID_SEQ.nextval,#{expenseAccountId},#{conductor},#{conductTime},#{conductClass},#{conductResult},#{info})
 	</insert>
-    <select id="findConductRecordById" parameterType="Integer" resultType="ConductRecord">
+    <select id="findConductRecordById" parameterType="Integer" resultMap="ConductRecordMap">
 		select * from E_CONDUCT_RECORD where ID=#{id}
 	</select>
 	<select id="findConductRecordByExpenseAccountId" parameterType="Integer" resultMap="ConductRecordMap">
-		select * from E_CONDUCT_RECORD where EXPENSE_ACCOUNT_ID=#{id}
+		select * from E_CONDUCT_RECORD where EXPENSE_ACCOUNT_ID=#{id} ORDER BY ID
 	</select>
     <update id="updateConductRecord" parameterType="ConductRecord">
-		update E_CONDUCT_RECORD set EXPENSE_ACCOUNT_ID=#{expenseAccountId},CONDUCTOR=#{conductor},CONDUCT_TIME=#{conduct_time},CONDUCT_CLASS=#{conduct_class},CONDUCT_RESULT=#{conduct_result},INFO=#{info} where ID=#{id}
+		update E_CONDUCT_RECORD set EXPENSE_ACCOUNT_ID=#{expenseAccountId},CONDUCTOR=#{conductor},CONDUCT_TIME=#{conductTime},CONDUCT_CLASS=#{conductClass},CONDUCT_RESULT=#{conductResult},INFO=#{info} where ID=#{id}
 	</update>
     <delete id="delConductRecord" parameterType="Integer">
 		delete from E_CONDUCT_RECORD where ID=#{id}
@@ -20,12 +20,12 @@
 
 
 	<resultMap id="ConductRecordMap" type="ConductRecord">
-		<id column="id" property="id" />
-		<result column="expenseAccountId" property="expenseAccountId" />
-		<result column="conductor" property="conductor" />
-		<result column="conduct_time" property="conduct_time" />
-		<result column="conduct_class" property="conduct_class" />
-		<result column="conduct_result" property="conduct_result" />
-		<result column="info" property="info" />
+		<id column="ID" property="id" />
+		<result column="EXPENSE_ACCOUNT_ID" property="expenseAccountId" />
+		<result column="CONDUCTOR" property="conductor" />
+		<result column="CONDUCT_TIME" property="conductTime" />
+		<result column="CONDUCT_CLASS" property="conductClass" />
+		<result column="CONDUCT_RESULT" property="conductResult" />
+		<result column="INFO" property="info" />
 	</resultMap>
 </mapper>

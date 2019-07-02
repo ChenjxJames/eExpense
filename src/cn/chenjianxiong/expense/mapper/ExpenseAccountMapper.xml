@@ -8,14 +8,20 @@
     <insert id="addExpenseAccount" parameterType="ExpenseAccount" >
 		insert into E_EXPENSE_ACCOUNT(ID,REASON,CREATOR,CREATE_TIME,CONDUCTOR,PRICE,STATE) values(#{id},#{reason},#{creator},#{createTime},#{conductor},#{price},#{state})
 	</insert>
-    <select id="findExpenseAccountById" parameterType="Integer" resultType="ExpenseAccount">
+    <select id="findExpenseAccountById" parameterType="Integer" resultMap="ExpenseAccountMap">
 		select * from E_EXPENSE_ACCOUNT where ID=#{id}
 	</select>
 	<select id="findAllExpenseAccount" resultMap="ExpenseAccountMap">
-		select * from E_EXPENSE_ACCOUNT
+		select * from E_EXPENSE_ACCOUNT ORDER BY ID
+	</select>
+	<select id="findExpenseAccountByCreatorId" parameterType="String" resultMap="ExpenseAccountMap">
+		select * from E_EXPENSE_ACCOUNT where CREATOR=#{id} ORDER BY ID
+	</select>
+	<select id="findExpenseAccountByConductorId" parameterType="String" resultMap="ExpenseAccountMap">
+		select * from E_EXPENSE_ACCOUNT where CONDUCTOR=#{id} ORDER BY ID
 	</select>
     <update id="updateExpenseAccount" parameterType="ExpenseAccount">
-		update E_EXPENSE_ACCOUNT set REASON=#{reason}, CREATOR=#{creator}, CREATE_TIME=#{createTime}, CONDUCTOR=#{conductor}, PRICE=#{price}, STATE=#{state} where ID=#{id}
+		update E_EXPENSE_ACCOUNT set REASON=#{reason}, CONDUCTOR=#{conductor}, PRICE=#{price}, STATE=#{state} where ID=#{id}
 	</update>
     <delete id="delExpenseAccount" parameterType="Integer">
 		delete from E_EXPENSE_ACCOUNT where ID=#{id}
@@ -25,7 +31,7 @@
 		<id column="id" property="id" />
 		<result column="reason" property="reason" />
 		<result column="creator" property="creator" />
-		<result column="createTime" property="createTime" />
+		<result column="create_Time" property="createTime" />
 		<result column="conductor" property="conductor" />
 		<result column="price" property="price" />
 		<result column="state" property="state" />

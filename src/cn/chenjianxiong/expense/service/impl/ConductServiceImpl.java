@@ -6,6 +6,8 @@ import cn.chenjianxiong.expense.service.ConductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @author ：James Chen
  * @date ：Created in 2019/5/24 15:17
@@ -21,5 +23,10 @@ public class ConductServiceImpl implements ConductService {
     @Override
     public boolean conduct(ConductRecord conductRecord) {
         return conductRecordMapper.addConductRecord(conductRecord) == 1;
+    }
+
+    @Override
+    public List<ConductRecord> findConductByExpenseAccount(Integer id) {
+        return conductRecordMapper.findConductRecordByExpenseAccountId(id);
     }
 }

@@ -1,6 +1,6 @@
 package cn.chenjianxiong.expense.controller;
 
-import cn.chenjianxiong.expense.entity.Result;
+import cn.chenjianxiong.expense.vo.Result;
 import cn.chenjianxiong.expense.entity.User;
 import cn.chenjianxiong.expense.service.UserService;
 import org.springframework.context.ApplicationContext;
@@ -22,13 +22,14 @@ import java.util.Map;
 @RequestMapping(value = "/user")
 @Controller
 public class UserController {
+    private ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+    private UserService userService = ctx.getBean(UserService.class);
+
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     @ResponseBody
     public Result register(@RequestBody User user) {
         Result result = new Result(-22, "注册失败。");
         try{
-            ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-            UserService userService = ctx.getBean(UserService.class);
             if (userService.register(user)) {
                 result.setState(0);
                 result.setInfo("注册成功。");
@@ -49,9 +50,6 @@ public class UserController {
             String userId = map.get("userId");
             String password = map.get("password");
             String keeplogin = map.get("keeplogin");
-
-            ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-            UserService userService = ctx.getBean(UserService.class);
 
             if (userService.login(userId, password)) {
                 User user = userService.findUserById(userId);
@@ -83,9 +81,6 @@ public class UserController {
             String newPassword = map.get("newPassword");
             String userId = ""; //通过session获取user id
 
-            ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-            UserService userService = ctx.getBean(UserService.class);
-
             if (userService.setPassword(userId, oldPassword, newPassword)) {
                 result.setState(0);
                 result.setInfo("密码更改成功。");
@@ -102,8 +97,6 @@ public class UserController {
     @RequestMapping(value = "/all", method = RequestMethod.GET)
     @ResponseBody
     public List<User> getAllUser(){
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-        UserService userService = ctx.getBean(UserService.class);
         return userService.findAllUser();
     }
 

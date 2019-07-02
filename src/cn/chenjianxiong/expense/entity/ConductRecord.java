@@ -4,11 +4,11 @@ import java.util.Date;
 
 public class ConductRecord {
     private int id;
-    private int expense_account_id;
+    private int expenseAccountId;
     private String conductor;
-    private Date conduct_time;
-    private String conduct_class;
-    private String conduct_result;
+    private Date conductTime;
+    private String conductClass;
+    private String conductResult;
     private String info;
 
     public int getId() {
@@ -19,12 +19,12 @@ public class ConductRecord {
         this.id = id;
     }
 
-    public int getExpense_account_id() {
-        return expense_account_id;
+    public int getExpenseAccountId() {
+        return expenseAccountId;
     }
 
-    public void setExpense_account_id(int expense_account_id) {
-        this.expense_account_id = expense_account_id;
+    public void setExpenseAccountId(int expenseAccountId) {
+        this.expenseAccountId = expenseAccountId;
     }
 
     public String getConductor() {
@@ -35,28 +35,28 @@ public class ConductRecord {
         this.conductor = conductor;
     }
 
-    public Date getConduct_time() {
-        return conduct_time;
+    public Date getConductTime() {
+        return conductTime;
     }
 
-    public void setConduct_time(Date conduct_time) {
-        this.conduct_time = conduct_time;
+    public void setConductTime(Date conductTime) {
+        this.conductTime = conductTime;
     }
 
-    public String getConduct_class() {
-        return conduct_class;
+    public String getConductClass() {
+        return conductClass;
     }
 
-    public void setConduct_class(String conduct_class) {
-        this.conduct_class = conduct_class;
+    public void setConductClass(String conductClass) {
+        this.conductClass = conductClass;
     }
 
-    public String getConduct_result() {
-        return conduct_result;
+    public String getConductResult() {
+        return conductResult;
     }
 
-    public void setConduct_result(String conduct_result) {
-        this.conduct_result = conduct_result;
+    public void setConductResult(String conductResult) {
+        this.conductResult = conductResult;
     }
 
     public String getInfo() {
@@ -71,11 +71,11 @@ public class ConductRecord {
     public String toString() {
         return "ConductRecord{" +
                 "id=" + id +
-                ", expense_account_id=" + expense_account_id +
+                ", expenseAccountId=" + expenseAccountId +
                 ", conductor='" + conductor + '\'' +
-                ", conduct_time=" + conduct_time +
-                ", conduct_class='" + conduct_class + '\'' +
-                ", conduct_result='" + conduct_result + '\'' +
+                ", conductTime=" + conductTime +
+                ", conductClass='" + conductClass + '\'' +
+                ", conductResult='" + conductResult + '\'' +
                 ", info='" + info + '\'' +
                 '}';
     }

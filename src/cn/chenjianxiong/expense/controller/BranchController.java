@@ -1,7 +1,7 @@
 package cn.chenjianxiong.expense.controller;
 
 import cn.chenjianxiong.expense.entity.Branch;
-import cn.chenjianxiong.expense.entity.Result;
+import cn.chenjianxiong.expense.vo.Result;
 import cn.chenjianxiong.expense.service.BranchService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -21,14 +21,15 @@ import java.util.Map;
 @RequestMapping(value = "/branch")
 @Controller
 public class BranchController {
+    private ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+    private BranchService branchService = ctx.getBean(BranchService.class);
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseBody
     public Result add(@RequestBody Branch branch){
         Result result = new Result(-1, "部门添加失败。");
         try{
-            ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-            BranchService branchService = ctx.getBean(BranchService.class);
+
 
             if (branchService.addBranch(branch)) {
                 result.setState(0);
@@ -48,9 +49,6 @@ public class BranchController {
     public Result update(@RequestBody Branch branch){
         Result result = new Result(-1, "部门信息更改失败。");
         try{
-            ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-            BranchService branchService = ctx.getBean(BranchService.class);
-
             if (branchService.updateBranch(branch)) {
                 result.setState(0);
                 result.setInfo("部门信息更改成功。");
@@ -70,9 +68,6 @@ public class BranchController {
         try{
             String branchId = map.get("branchId");
 
-            ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-            BranchService branchService = ctx.getBean(BranchService.class);
-
             if (branchService.delBranch(branchId)) {
                 result.setState(0);
                 result.setInfo("部门删除成功。");
@@ -90,8 +85,6 @@ public class BranchController {
     public List<Branch> getAllBranch(){
         List<Branch> branchList = null;
         try{
-            ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-            BranchService branchService = ctx.getBean(BranchService.class);
             branchList = branchService.findAllBranch();
         }catch (Exception e){
             e.printStackTrace();
@@ -104,8 +97,6 @@ public class BranchController {
     public Branch getBranchById(@PathVariable("id") String branchId){
         Branch branch = null;
         try{
-            ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-            BranchService branchService = ctx.getBean(BranchService.class);
             branch = branchService.findBranchById(branchId);
         }catch (Exception e){
             e.printStackTrace();

@@ -1,6 +1,6 @@
 package cn.chenjianxiong.expense.interceptor;
 
-import cn.chenjianxiong.expense.entity.Result;
+import cn.chenjianxiong.expense.vo.Result;
 import cn.chenjianxiong.expense.entity.User;
 import cn.chenjianxiong.expense.service.UserService;
 import com.alibaba.fastjson.JSON;
@@ -31,7 +31,6 @@ public class LoginInterceptor implements HandlerInterceptor {
         //这里说明访问与登录无关的其他资源：判断session：USER_LOGIN
         HttpSession session=request.getSession();
         User user = (User) session.getAttribute("USER_LOGIN");
-        System.out.println(user);
         if(user != null) {//没登录，或过期了
             ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
             UserService userService = ctx.getBean(UserService.class);

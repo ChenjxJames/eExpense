@@ -10,9 +10,11 @@ public interface ExpenseService {
     boolean addExpenseAccountInfo(ExpenseAccountInfo expenseAccountInfo);
     boolean delExpenseAccount(Integer id);
     boolean delExpenseAccountInfo(Integer id);
+    boolean updateExpenseAccount(ExpenseAccount expenseAccount, List<ExpenseAccountInfo> expenseAccountInfoList);
     boolean updateExpenseAccount(ExpenseAccount expenseAccount);
-    boolean updateExpenseAccountInfo(ExpenseAccountInfo expenseAccountInfo);
     List<ExpenseAccount> findAllExpenseAccount();
+    List<ExpenseAccount> findExpenseAccountByConductor(String id);
+    List<ExpenseAccount> findExpenseAccountByCreator(String id);
     List<ExpenseAccountInfo> findExpenseAccountInfoByExpenseAccountId(Integer id);
     ExpenseAccount findExpenseAccountById(Integer id);
     ExpenseAccountInfo findExpenseAccountInfoById(Integer id);
